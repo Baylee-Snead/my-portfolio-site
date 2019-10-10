@@ -183,7 +183,7 @@ address {
 nav {
   overflow: hidden;
   background-color: #e1dfdf;
-  margin-top: 75px;
+  margin-top: 25px;
 }
 
 nav ul {
@@ -283,13 +283,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 55%;
+  margin-left: 25px;
   margin-bottom: 50px;
 }
 
 
 .hero-area h1 {
-  margin-bottom: 50px;
+  margin: 50px 25px 50px 25px;
 }
 
 .hero-area span {
@@ -309,6 +310,10 @@ header {
 .work h1 {
   font-family: 'Satisfy', cursive;
   text-align: left;
+}
+
+.work h3 {
+  font-weight: bold;
 }
 
 .work article {
@@ -347,6 +352,7 @@ button {
 
 .message-me button a {
   color: #2c2c2c;
+  font-weight: bold;
 }
 
 .work .work-divider {
@@ -358,7 +364,110 @@ button {
 
 /* ---------------- Mobile Styles - About page --------------- */
 
+
+#about-header {
+  background-color: #2c2c2c;
+}
+
+.about-me, .facts-skillset {
+  color: #2c2c2c;
+  display: flex;
+  justify-content: center;
+}
+
+.about-me h1 {
+  font-family: 'Satisfy', cursive;
+}
+
+.about-me p {
+  line-height: 2em;
+}
+
+.about-me figure {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 90%;
+  margin-top: 50px;
+}
+
+/* Facts & Skills */
+
+.facts-skillset h3 {
+  text-decoration: underline;
+}
+
+.facts i {
+  margin-right: 5px;
+}
+
+.facts .bright-red {
+  color: #d7332b;
+}
+
+.facts .dark-red {
+  color: #5f0c0c;
+}
+
+.skillset h3 {
+  margin-top: 50px;
+}
+
+.facts-skillset .skills-circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.facts-skillset .skills-circles ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column;
+  background-color: #e1dfdf;
+  border-radius: 50%;
+  width: 100px;
+  height: 125px;
+}
+
+
+/* Work Together */
+
+.work-together {
+  display: flex;
+  justify-content: center;
+  background-color: #5f0c0c;
+  text-align: center;
+}
+
+.work-together button {
+  background-color: #e1dfdf;
+  box-shadow: -1px 7px 10px #2c2c2c;
+}
+
+.work-together button a {
+  color: #2c2c2c;
+}
+
 /* ---------------- Mobile Styles - Contact page ------------- */
+
+#contact-header {
+  background-color: #2c2c2c;
+}
+
+.contact-content {
+  color: #2c2c2c;
+}
+
+.contact-content h2 {
+  font-family: 'Satisfy', cursive;
+}
+
+.contact-content h3 {
+  font-size:
+}
+
 
 
 /* ==========================================================================
@@ -460,41 +569,51 @@ button {
 
  /* Header */
 
-header {
-  justify-content: space-between;
-}
+ .split-screen {
+   display: flex;
+   justify-content: center;
+   width: 50%;
+ }
 
 header .split-screen {
-  width: 50%;
-  justify-content: space-between;
   align-items: flex-start;
-  flex-direction: row;
-  height: 100px;
+  height: 50px;
 }
 
-/*header .content-wrapper {
-  width: 100%;
-  justify-content: space-between;
-}*/
+header h2, .hero-area h1 {
+  margin-left: 80px;
+}
 
-header h1 {
-  color: #2c2c2c;
+nav ul, .hero-area figure {
+    margin-right: 80px;
 }
 
 header nav {
-  /*width: 50%;*/
+  display: flex;
+  justify-content: flex-start;
+  background-color: #d7332b;
+  margin-top: 0;
 }
 
 header nav ul {
-  justify-content: space-between;
+  display: flex;
 }
 
-header .split-screen h1, li {
-  margin-top: 20px;
+nav ul li a {
+  display: flex;
+  justify-content: center;
+  background-color: #d7332b;
+  color: #eee;
+  width: 50%;
+  padding-right: 40px;
 }
 
-.header-divider {
+nav a.icon {
   display: none;
+}
+
+nav a:hover {
+  color: #5f0c0c;
 }
 
 
@@ -502,25 +621,22 @@ header .split-screen h1, li {
 
 .hero-area  {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
   justify-content: center;
   align-items: center;
 }
 
-.split-screen {
-  display: flex;
-  justify-content: center;
+.hero-area .split-screen {
   align-items: center;
-  width: 50%;
-  height: 500px;
+  height: 450px;
 }
 
 #split-right {
-  background-color: #354050;
+  background-color: #d7332b;
 }
 
 #split-left {
-  color: #2c2c2c;
+ background-color: #5f0c0c;
 }
 
 
@@ -545,8 +661,36 @@ header .split-screen h1, li {
 
 /* Message Me */
 
-.message-me {
+.message-me .content-wrapper {
+  width: 65%;
+  margin: 50px 0;
+}
 
+/* Footer */
+
+footer .content-wrapper {
+  width: 65%;
+  margin: 50px 0;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+footer .contact {
+  margin-bottom: 0;
+}
+
+footer .social-icons {
+  width: 12.5em;
+  justify-content: space-between;
+}
+
+footer .copyright {
+  width: 100%;
 }
 
 /*---------------- About Page Tablet Styles ------------- */
