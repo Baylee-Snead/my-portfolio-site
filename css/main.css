@@ -107,7 +107,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1em;
   height: 100%;
   color: #eee;
@@ -308,8 +308,9 @@ header {
 }
 
 .work h1 {
-  font-family: 'Satisfy', cursive;
+  font-family: 'Poppins', sans-serif;
   text-align: left;
+  font-weight: bold;
 }
 
 .work h3 {
@@ -393,6 +394,10 @@ button {
 
 /* Facts & Skills */
 
+.facts-skillset .content-wrapper {
+  margin-top: 0px;
+}
+
 .facts-skillset h3 {
   text-decoration: underline;
 }
@@ -456,19 +461,66 @@ button {
   background-color: #2c2c2c;
 }
 
-.contact-content {
+.contact-content, .contact-form {
   color: #2c2c2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content .content-wrapper {
+  margin-bottom: 25px;
 }
 
 .contact-content h2 {
   font-family: 'Satisfy', cursive;
+  font-size: 2.14em;
 }
 
 .contact-content h3 {
-  font-size:
+  font-size: 1.15em;
 }
 
+.contact-form .content-wrapper {
+  margin-top: 0;
+}
 
+form {
+  transition: all 4s ease-in-out;
+  display: flex;
+  flex-flow: column;
+}
+
+.form-control {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #2c2c2c;
+  color: #2c2c2c;
+  margin-bottom: 16px;
+  font-size: 1em;
+}
+
+input {
+  height: 45px;
+}
+
+form .submit {
+  background: #5f0c0c;
+  border-color: transparent;
+  color: #eee;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: -1px 7px 10px #a9a9a9;
+}
+
+form .submit:hover {
+  background-color: #d7332b;
+  cursor: pointer;
+}
 
 /* ==========================================================================
    Helper classes
@@ -628,7 +680,7 @@ nav a:hover {
 
 .hero-area .split-screen {
   align-items: center;
-  height: 450px;
+  height: 500px;
 }
 
 #split-right {
@@ -695,7 +747,65 @@ footer .copyright {
 
 /*---------------- About Page Tablet Styles ------------- */
 
+#about-header nav, #about-header nav ul li a {
+  background-color: #2c2c2c;
+  justify-content: center;
+}
+
+#about-header nav {
+  margin-left: 35px;
+}
+
+#about-header h2 {
+  width: 35%;
+}
+
+#about-header nav {
+  width: 43.25%;
+}
+.about-me .content-wrapper {
+  margin-top: 30px;
+}
+
+.facts-skillset-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.facts, .skillset {
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.skillset .skills-circles {
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+
 /*----------------- Contact Page Tablet Styles ---------- */
+
+#contact-header nav, #contact-header nav ul li a {
+  background-color: #2c2c2c;
+  justify-content: center;
+}
+
+#contact-header nav {
+  margin-left: 35px;
+}
+
+#contact-header h2 {
+  width: 35%;
+}
+
+#contact-header nav {
+  width: 43.25%;
+}
 
 }
 
@@ -703,9 +813,66 @@ footer .copyright {
 @media only screen and (min-width: 1200px){
 
  .content-wrapper {
-   max-width: 960px;
+   max-width: 1000px;
  }
 
+ h1 {
+   font-size: 3em;
+ }
+
+ h2 {
+   font-size: 2em;
+ }
+
+ h3 {
+   font-size: 1.6em;
+ }
+
+ p {
+   font-size: 1.14em;
+ }
+
+ nav ul li a {
+   font-size: 1.5em;
+ }
+
+ /*---- Footer ----*/
+
+ .social-icons {
+
+ }
+
+/*----------------- Home Page Desktop Styles ------------- */
+
+header {
+  height: 90px;
+}
+
+header h2, .hero-area h1 {
+  margin-left: 100px;
+}
+
+nav ul li a {
+  padding-right: 90px;
+}
+
+.hero-area .split-screen {
+  height: 600px;
+}
+
+header #split-right {
+  height: 150px;
+}
+
+/*------------------ About Page Desktop Styles ----------- */
+
+
+/*------------------- Contact Page Desktop Styles ---------- */
+
+
+form{
+  width: 60%;
+}
 
 }
 
